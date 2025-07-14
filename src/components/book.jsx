@@ -1,4 +1,3 @@
-import React from 'react';
 import { useLocation, useNavigate, useParams } from 'react-router-dom';
 import { getBook, deleteBook } from '../data/data';
 
@@ -7,7 +6,7 @@ function Book(props) {
     const book = getBook(params.bookId);
     const navigate = useNavigate();
     const location = useLocation();
-    console.log(book);
+
     if(book){
         return (
             <main style={{padding:"1rem", marginLeft:"2rem"}}>

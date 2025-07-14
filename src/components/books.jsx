@@ -1,4 +1,3 @@
-import React from "react";
 import {getBooks} from '../data/data';
 import { NavLink, Outlet, useLocation, useSearchParams } from "react-router-dom";
 
@@ -7,7 +6,7 @@ function Books(props) {
     const books = getBooks();
     const [searchParams, setSearchParams] = useSearchParams();
     const location = useLocation();
-    console.log(location);
+
     return (
         <div style={{display: "flex"}}>
             <nav style={{borderRight:"solid 1px", padding:"1rem"}}>
